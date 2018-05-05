@@ -2,7 +2,7 @@ import tensorflow as tf,sys,os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # change this as you see fit
-#image_path = sys.argv[1]
+image_path = sys.argv[1]
 acceptable_score = 0.8
 
 def chekcImage(image_path):
@@ -35,3 +35,4 @@ def chekcImage(image_path):
 			if (score > acceptable_score):
 				print('%s (score = %.5f)' % (human_string, score))
 	
+chekcImage(image_path)	
